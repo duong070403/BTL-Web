@@ -19,7 +19,7 @@ li{
     list-style: none;
 }
 .container{
-    max-width: 1440px;
+    max-width: 100%;
 }
 /*---------------------------------------------------------------------------------*/
 
@@ -408,16 +408,40 @@ li{
 .client{
     margin-top: 750px;
 }
-.client img{
+.client .container{
+    display: flex;
+    justify-content: center;
+    background: #dbdbdb;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: 100%;
-} 
+    overflow: hidden;
+}
+.client-img{
+    width: 45%;
+    padding: 5%;
+}
+.client-img img{
+    margin-right: 0;
+    width: 60%;
+    border-radius: 1000px;
+}
+.client-text{
+    width: 40%;
+}
+.client-text h1{
+    margin-top: 50px;
+    font-size: 54px;
+}
+.client-text p{
+    margin-top: 25px;
+    font-size: 20px;
+}
 /*------------------------------------------GALLERY---------------------------------------*/
 .gallery{
     margin-top: 100px;
     margin-left:5.5% ;
 }
-.gallery a{
-    
+.gallery a{  
     font-family: Open Sans;
     font-size: 30px;
     font-weight: 600;
@@ -475,7 +499,7 @@ li{
     text-align: left;
     margin-bottom: 20px;
 }
-.location img{
+.location iframe{
     margin-top: 40px;
     width: 100%;
 }
@@ -701,6 +725,19 @@ body{
 .amenities-icon img {
     width: 50px;
     height: auto;
+}
+/*---------------------------------------------------------------------------------*/
+.client .container{
+    flex-direction: column;
+}
+.client-img{
+    margin-top: 5%;
+    margin-left:17%;
+    width: 100%;
+}
+.client-text{
+    margin-left: 5%;
+    width: 90%;
 }
 /*---------------------------------------------------------------------------------*/
 .gallery h2,.location h2{
